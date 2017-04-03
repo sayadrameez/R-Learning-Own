@@ -46,6 +46,15 @@ rm(z_v)
   sumdivbylen<-  sum(year_vector)/ length(year_vector)
   print(sumdivbylen)
   print(mean(year_vector))
+  print(summary(year_vector))
  }
  
  checkAverage()
+ 
+ checkNegativeIndex <- function(){
+   print(movies_vector)
+   print(movies_vector[-1:-3])
+   print(movies_vector)
+ }
+ 
+ checkNegativeIndex()
