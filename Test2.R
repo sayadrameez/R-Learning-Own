@@ -51,6 +51,21 @@ dataFramesOperations<- function(){
   print(year_vector)
   dataframe_moveis[1,2]<-NA
   print(dataframe_moveis)
+  # dataframe_moveis2<- data.frame(name = dataframe_moveis$name,
+  #                                year = dataframe_moveis$year,
+  #                                length = dataframe_moveis$length,stringsAsFactors=FALSE)
+  #print(dataframe_moveis2)
+  
+  dataframe_moveis2 <- data.frame(lapply(dataframe_moveis, as.character), stringsAsFactors=FALSE)
+  
+  dataframe_moveis2<-rbind(dataframe_moveis2,c("Moana",2017,"Medium"))
+  
+  print(dataframe_moveis2)
+  
+  dataframe_moveis[1]<-lapply(dataframe_moveis[1], as.character)
+  dataframe_moveis<-rbind(dataframe_moveis,c("Logan",2017,"Long"))
+  
+  print(dataframe_moveis)
 }
 
 dataFramesOperations()
