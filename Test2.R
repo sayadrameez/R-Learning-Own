@@ -11,6 +11,7 @@ costs <- c(3, 15, 3, 10)
 list_movie <- list(name ="toy Story",year=1995,genre=c("Action","Comedy","Animation")) 
 
 dataframe_moveis<-data.frame(name=movies_vector,year=year_vector,length = movielength_vector)
+dataframe_moveis3<-data.frame("name"=c("Helo","ds"))
 
 vectorConditions<-function(){
   names(year_vector)<-
@@ -69,3 +70,16 @@ dataFramesOperations<- function(){
 }
 
 dataFramesOperations()
+
+datatFrameOperations2<-function(){
+  str(dataframe_moveis)
+  dataframe_moveis <- dataframe_moveis[-2,]
+  print(dataframe_moveis)
+  dataframe_moveis$length<-NULL
+  print(dataframe_moveis)
+  #Subset of DataFrame
+  print(dataframe_moveis[1:2,1:2])
+}
+datatFrameOperations2()
+print(dataframe_moveis)
+attributes(dataframe_moveis)
