@@ -58,3 +58,18 @@ rm(z_v)
  }
  
  checkNegativeIndex()
+ 
+ checkForG<-function(f){
+   if(f >1999){
+     print("Hi")
+   }else{
+     print("Why")
+   }
+ }
+ 
+ checkForG(year_vector)
+ 
+ for(y in year_vector)
+   checkForG(y)
+ 
+ 
