@@ -9,3 +9,5 @@ pollutantmean <- function(directory,pollutant,id=1:322){
 }
 
 pollutantmean("C:/Coursera/specdata/","sulfate",1:10)
+
+##
